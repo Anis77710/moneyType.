@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-error-container: #ffdad6;
+  --color-inverse-primary: #735c00;
+  --color-background: #131313;
+  --color-tertiary-fixed-dim: #ffb3b5;
+  --color-surface-container: #202020;
+  --color-surface-tint: #eec224;
+  --color-surface-dim: #131313;
+  --color-outline: #9a9079;
+  --color-surface-container-highest: #353535;
+  --color-secondary-fixed: #e1e2e6;
+  --color-surface-container-high: #2a2a2a;
+  --color-on-secondary-fixed-variant: #45474a;
+  --color-inverse-on-surface: #303030;
+  --color-on-tertiary-fixed: #40000b;
+  --color-on-tertiary-container: #911c2e;
+  --color-surface-variant: #353535;
+  --color-surface: #131313;
+  --color-on-primary-container: #5c4900;
+  --color-on-tertiary: #680018;
+  --color-on-surface-variant: #d1c5ad;
+  --color-error: #ffb4ab;
+  --color-tertiary-container: #ffa3a6;
+  --color-on-surface: #e5e2e1;
+  --color-secondary: #c5c6ca;
+  --color-error-container: #93000a;
+  --color-inverse-surface: #e5e2e1;
+  --color-surface-bright: #393939;
+  --color-primary-container: #e2b714;
+  --color-on-secondary-container: #b7b8bc;
+  --color-on-primary: #3c2f00;
+  --color-primary: #ffd341;
+  --color-on-error: #690005;
+  --color-on-tertiary-fixed-variant: #8b172a;
+  --color-on-secondary: #2e3133;
+  --color-on-background: #e5e2e1;
+  --color-tertiary-fixed: #ffdada;
+  --color-on-primary-fixed: #231a00;
+  --color-outline-variant: #4d4633;
+  --color-on-secondary-fixed: #191c1e;
+  --color-tertiary: #ffcbcc;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-primary-fixed-dim: #eec224;
+  --color-secondary-fixed-dim: #c5c6ca;
+  --color-primary-fixed: #ffe087;
+  --color-on-primary-fixed-variant: #574500;
+  --color-surface-container-low: #1b1b1c;
+  --color-secondary-container: #47494c;
+  --font-stat-label: JetBrains Mono;
+  --font-body-md: JetBrains Mono;
+  --font-label-sm: JetBrains Mono;
+  --font-display-lg: JetBrains Mono;
+  --font-typing-area: JetBrains Mono;
+  --font-stat-value: JetBrains Mono;
+  --font-typing-area-mobile: JetBrains Mono;
+  --text-stat-label: 14px;
+  --text-body-md: 16px;
+  --text-label-sm: 12px;
+  --text-display-lg: 64px;
+  --text-typing-area: 32px;
+  --text-stat-value: 48px;
+  --text-typing-area-mobile: 24px;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: 'JetBrains Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+::selection {
+  background-color: rgba(255, 211, 65, 0.3);
+  color: #ffd341;
+}
+
+.custom-scrollbar::-webkit-scrollbar { width: 4px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb { background: #353535; border-radius: 2px; }
+.custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #ffd341; }
+
+.cursor-blink {
+  animation: blink 1.2s ease-in-out infinite;
+}
+@keyframes blink {
+  0%, 45% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+
+.caret-transform {
+  will-change: transform;
+  transition: transform 80ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.words-transform {
+  will-change: transform;
+  transition: transform 120ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.15s ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

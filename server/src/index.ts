@@ -10,7 +10,7 @@ import { TextService } from './services/textService.js'
 import { SocketHandler } from './handlers/socketHandler.js'
 
 /**
- * Zentype real-time multiplayer server.
+ * Typee real-time multiplayer server.
  *
  * Run:  npm run dev (server/) — dev with watch
  *       npm run build && npm start — production

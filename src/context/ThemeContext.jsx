@@ -8,13 +8,13 @@ const DEFAULT_THEME = THEMES[0]
 
 export function ThemeProvider({ children }) {
   const [theme, setThemeState] = useState(() => {
-    const saved = localStorage.getItem('MoneyType-theme')
+    const saved = localStorage.getItem('typee-theme')
     return saved || DEFAULT_THEME.name
   })
 
   const setTheme = (name) => {
     setThemeState(name)
-    localStorage.setItem('MoneyType-theme', name)
+    localStorage.setItem('typee-theme', name)
   }
 
   const currentTheme = THEMES.find(t => t.name === theme) || DEFAULT_THEME

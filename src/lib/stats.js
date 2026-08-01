@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'zentype_test_history'
+const STORAGE_KEY = 'typee_test_history'
 const MAX_ENTRIES = 500
 
 export function loadHistory() {

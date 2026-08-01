@@ -108,7 +108,7 @@ export default function ZenModePage() {
       </div>
 
       <div className={`fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-[10vw] py-8 transition-opacity duration-500 ${showUI ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-        <div className="font-display-lg text-[24px] text-primary tracking-tighter font-bold">MoneyType</div>
+        <div className="font-display-lg text-[24px] text-primary tracking-tighter font-bold">Typee</div>
         <div className="flex gap-8 items-center text-secondary opacity-50 hover:opacity-100 transition-opacity">
           <Link to="/" className="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">close</Link>
           <Link to="/settings" className="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">settings</Link>

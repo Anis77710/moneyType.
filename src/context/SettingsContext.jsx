@@ -19,7 +19,7 @@ const DEFAULTS = {
 
 function load() {
   try {
-    const raw = localStorage.getItem('MoneyType-settings')
+    const raw = localStorage.getItem('typee-settings')
     return raw ? { ...DEFAULTS, ...JSON.parse(raw) } : DEFAULTS
   } catch {
     return DEFAULTS
@@ -57,7 +57,7 @@ export function SettingsProvider({ children }) {
   const setSetting = useCallback((key, value) => {
     setSettingsState(prev => {
       const next = { ...prev, [key]: value }
-      localStorage.setItem('MoneyType-settings', JSON.stringify(next))
+      localStorage.setItem('typee-settings', JSON.stringify(next))
       return next
     })
   }, [])

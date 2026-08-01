@@ -53,7 +53,7 @@ export default function SettingsPage() {
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = 'zentype-history.csv'
+    a.download = 'typee-history.csv'
     a.click()
     URL.revokeObjectURL(url)
   }
@@ -117,7 +117,7 @@ export default function SettingsPage() {
               </div>
               <div className="flex gap-3">
                 <button onClick={exportCsv} className="px-4 py-1.5 rounded border border-outline/30 text-secondary hover:text-primary hover:border-primary transition-all text-xs">Export CSV</button>
-                <button onClick={() => navigator.clipboard?.writeText(`MoneyType.profile/${user?.id?.slice(0, 8)}`)} className="px-4 py-1.5 rounded bg-surface-container border border-outline-variant text-on-surface hover:text-primary hover:border-primary transition-all text-xs">Share Profile</button>
+                <button onClick={() => navigator.clipboard?.writeText(`typee.profile/${user?.id?.slice(0, 8)}`)} className="px-4 py-1.5 rounded bg-surface-container border border-outline-variant text-on-surface hover:text-primary hover:border-primary transition-all text-xs">Share Profile</button>
               </div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

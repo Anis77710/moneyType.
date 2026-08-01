@@ -22,9 +22,9 @@
 
 ---
 
-## What is ZenType?
+## What is Typee?
 
-ZenType is a full-stack typing platform that combines solo practice, real-time multiplayer racing, and deep performance analytics. Type faster. Track everything. Race anyone.
+Typee is a full-stack typing platform that combines solo practice, real-time multiplayer racing, and deep performance analytics. Type faster. Track everything. Race anyone.
 
 The server is the single source of truth — all WPM, accuracy, and ranking is computed server-side. Clients only send raw character counters. Every progress report passes through a multi-layer anti-cheat engine before being accepted.
 
@@ -112,7 +112,7 @@ After every test you get a full breakdown:
 ## Architecture
 
 ```
-zentype/
+typee/
 ├── src/                    # React frontend (Vite + Tailwind)
 │   ├── pages/              # Route-level page components
 │   ├── components/         # Shared UI (Navbar, Footer, RaceScreen, Confetti)
@@ -190,7 +190,7 @@ Suspicious events are logged with room ID, player ID, and rejection reason.
 
 ```bash
 git clone <repo-url>
-cd zentype
+cd typee
 
 # Frontend dependencies
 npm install

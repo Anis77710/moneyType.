@@ -3,7 +3,7 @@ import { ClientEvents, ServerEvents } from '../../shared/types'
 
 export const SERVER_URL = import.meta.env.VITE_SERVER_URL ?? 'http://localhost:3001'
 
-const SESSION_KEY = 'zentype-race-session'
+const SESSION_KEY = 'typee-race-session'
 let socket = null
 let currentName = ''
 

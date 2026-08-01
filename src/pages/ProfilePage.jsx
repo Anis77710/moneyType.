@@ -166,7 +166,7 @@ export default function ProfilePage() {
                 </button>
               )}
               <button
-                onClick={() => navigator.clipboard?.writeText(`MoneyType.profile/${user?.id?.slice(0, 8)}`)}
+                onClick={() => navigator.clipboard?.writeText(`typee.profile/${user?.id?.slice(0, 8)}`)}
                 className="px-6 py-2 rounded bg-surface-container-highest text-primary border border-primary transition-all font-body-md"
               >
                 Share Profile

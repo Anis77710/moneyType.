@@ -642,7 +642,7 @@ export default function HomePage() {
         <nav className="flex justify-between items-center max-w-[1200px] mx-auto px-[10vw] py-8">
           <Link to="/" className="font-display-lg text-[32px] text-primary tracking-tighter flex items-center gap-2">
             <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>keyboard</span>
-            MoneyType
+            Typee
           </Link>
           <div className="hidden md:flex items-center gap-6">
             <Link to="/" className="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md transition-all">Test</Link>

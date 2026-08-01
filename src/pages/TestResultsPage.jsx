@@ -53,9 +53,9 @@ export default function TestResultsPage() {
   const peak = series.length > 0 ? Math.max(...series.map(p => p.wpm)) : wpm
 
   const handleShare = () => {
-    const text = `I just scored ${wpm} WPM with ${acc}% accuracy on MoneyType!`
+    const text = `I just scored ${wpm} WPM with ${acc}% accuracy on Typee!`
     if (navigator.share) {
-      navigator.share({ title: 'MoneyType Results', text })
+      navigator.share({ title: 'Typee Results', text })
     } else {
       navigator.clipboard?.writeText(text).then(() => {
         setCopied(true)
